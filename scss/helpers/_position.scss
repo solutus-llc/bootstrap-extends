@@ -18,6 +18,22 @@
   z-index: $zindex-fixed;
 }
 
+.fixed-left {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  z-index: $zindex-fixed;
+}
+
+.fixed-right {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  z-index: $zindex-fixed;
+}
+
 .sticky-top {
   @supports (position: sticky) {
     position: sticky;
