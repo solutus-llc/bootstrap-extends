@@ -157,3 +157,19 @@
 @each $color, $value in $theme-colors {
   @include list-group-item-variant($color, color-level($value, -9), color-level($value, 6));
 }
+
+// Borderless list items
+//
+//
+//
+
+.list-group-borderless {
+  .list-group-item {
+    border-width: 0;
+    @include border-radius(0);
+
+    .list-style-icon {
+      text-indent: -1em;
+    }
+  }
+}
